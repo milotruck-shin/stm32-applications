@@ -1,18 +1,14 @@
-Here is a clean, professionally formatted version of your project description, optimized for a `README.md` file. I've organized the hardware parameters into clear sections and improved the readability of the technical specifications.
-
----
-
 # STM32H755ZI Interrupt Testing (CAN & TIM)
 
-This application serves as a test environment for verifying interrupt handling on the **STM32H755ZI** microcontroller, specifically focusing on the FDCAN protocol and high-frequency timer interrupts.
+This application is a dummy code for testing interrupts for CAN protocol (STM32H755ZI)
 
-## 🚀 Features
+## Features
 * **FDCAN RxFifo0 Interrupt**: Triggers upon receiving a CAN message. The handler toggles an onboard LED and outputs the status to the Serial terminal.
 * **TIM16 Interrupt**: A periodic timer interrupt configured to fire every **0.5ms** for time-critical task execution.
 
 ---
 
-## 🛠 Hardware Configuration
+## CubeMX Configuration
 
 ### FDCAN Basic Parameters
 | Parameter | Value |
@@ -48,7 +44,7 @@ Used for serial debugging and terminal output.
 
 ---
 
-## 📝 Implementation Notes
+## Implementation Notes
 > **Note:** Since the FDCAN is set to **Internal Loopback Mode**, the controller will receive its own transmitted messages. This is ideal for testing interrupt service routines (ISRs) without needing an external CAN transceiver or bus.
 
 
